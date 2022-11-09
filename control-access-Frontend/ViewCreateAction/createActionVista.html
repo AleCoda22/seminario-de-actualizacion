@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>ViewCreateGroup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<style >
+  body{
+    background-image: url(margaritaazul.jpeg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+  }
+
+</style>
+
+</body>
+<script type="text/javascript">
+
+ 
+
+
+let header = document.createElement('div');
+ header.classList.add("w3-container","w3-blue","w3-center");
+ header.innerText = "Create Group";
+
+let container = document.createElement('div');
+container.classList.add('w3-container', 'w3-half', 'w3-margin-top', "w3-center");
+container.style.maxwidth= '600px';
+
+
+
+
+let loginImage=document.createElement('img');
+  loginImage.src = 'image.avat.jpeg';
+  loginImage.classList.add('w3-circle','w3-margin-top',"w3-center");
+  loginImage.alt='Avatar';
+  loginImage.style.width='30%';
+
+let loginForm = document.createElement('form');
+loginForm.classList.add('w3-container', 'w3-card-4',"w3-center");
+
+let userNameLabel = document.createElement("label");
+  userNameLabel.innerText = "Name";
+  userNameLabel.style="width:90%" ;
+
+let userNameInput = document.createElement('input');
+  userNameInput.classList.add ('w3-input','w3-border', 'w3-margin-bottom','w3-center');
+  userNameInput.placeholder =" Enter Name";
+  userNameInput.setAttribute("required","true");
+
+let descriptionLabel = document.createElement("label");
+  descriptionLabel.innerText = "Description";
+  descriptionLabel.style ="width:90%";
+
+
+let descriptionInput = document.createElement('input');
+  descriptionInput.classList.add ('w3-input','w3-border', 'w3-margin-bottom',"w3-center");
+  descriptionInput.placeholder =" Enter Description";
+  descriptionInput.setAttribute("required","true");
+
+
+
+
+
+ let buttonLogin = document.createElement('div');
+ buttonLogin.classList=('w3-button', 'w3-section', 'w3-teal', 'w3-ripple','w3-blue');
+ 
+
+let buttonLoginLabel = document.createElement("label");
+buttonLoginLabel.style = "width:50%";
+buttonLogin.innerText = "Create";
+
+
+
+
+
+
+ loginForm.appendChild(userNameInput);
+ loginForm.appendChild(userNameLabel);
+ loginForm.appendChild(descriptionInput);
+ loginForm.appendChild(descriptionLabel);
+ loginForm.appendChild(buttonLogin);
+ loginForm.appendChild(buttonLoginLabel);
+
+
+
+ 
+ container.appendChild(loginImage);
+ container.appendChild(loginForm);
+ 
+
+
+  document.body.appendChild(header);
+  document.body.appendChild(container);
+
+
+</script>
+
+
+
+
+
+</html>
